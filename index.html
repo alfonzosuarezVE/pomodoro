@@ -21,15 +21,35 @@
       <div class="container">
         <div class="time-container">
           <form action="">
-            <label for="learningMinutes">
-              <input type="number" id="learningMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
-            </label>
-            <label for="restingMinutes">
-              <input type="number" id="restingMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
-            </label>
-            <label for="reflexionMinutes">
-              <input type="number" id="reflexionMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
-            </label>
+              <div class="form-learningInput">
+                <label for="learningMinutes">
+                    <input type="number" id="learningMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+                  <span>:</span>
+                  <label for="learningSeconds">
+                    <input type="number" id="learningSeconds" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+              </div>
+        
+              <div class="form-restingInput">
+                <label for="restingMinutes">
+                    <input type="number" id="restingMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+                  <span>:</span>
+                  <label for="restingSeconds">
+                    <input type="number" id="learningSeconds" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+              </div>
+
+              <div class="form-ReflexionInput">
+                <label for="reflexionMinutes">
+                    <input type="number" id="reflexionMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+                  <span>:</span>
+                  <label for="reflexionSeconds">
+                    <input type="number" id="reflexionSeconds" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+              </div>
           </form>
         </div>
 

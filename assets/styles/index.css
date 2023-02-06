@@ -34,7 +34,6 @@ main {
 header {
   width: 100%;
   height: 100px;
-  position: fixed;
   display: grid;
   place-content: center;
   letter-spacing: 5px;
@@ -44,20 +43,19 @@ header {
 }
 .container {
   width: 100%;
-  height: 92vh;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .time-container {
-  width: 80%;
+  width: 100%;
   min-width: 340px;
   max-width: 400px;
-  height: 300px;
+  height: 600px;
   display: grid;
   place-content: center;
-  margin-bottom: 200px;
 }
 form
 {
@@ -113,12 +111,14 @@ input[type=number] {
 }
 .controls-container ul 
 {
+    
+    align-self: flex-end;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+    display: grid;
+    place-content: center;
+    align-self: flex-end;
+    
 
 }
 

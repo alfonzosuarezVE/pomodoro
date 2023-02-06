@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h2>POMODORO</h2>
+      </header>
+      <div class="container">
+        <div class="time-container">
+          <form action="">
+              <div class="form-learningInput">
+                <label for="learningMinutes">
+                    <input type="number" id="learningMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+                  <span>:</span>
+                  <label for="learningSeconds">
+                    <input type="number" id="learningSeconds" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+              </div>
+        
+              <div class="form-restingInput">
+                <label for="restingMinutes">
+                    <input type="number" id="restingMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+                  <span>:</span>
+                  <label for="restingSeconds">
+                    <input type="number" id="learningSeconds" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+              </div>
+
+              <div class="form-ReflexionInput">
+                <label for="reflexionMinutes">
+                    <input type="number" id="reflexionMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+                  <span>:</span>
+                  <label for="reflexionSeconds">
+                    <input type="number" id="reflexionSeconds" min="0" max="60" placeholder="00" value="0" step="5" required/>
+                  </label>
+              </div>
+          </form>
+        </div>
+
+        <div class="controls-container">
+          <ul>
+            <li class="play-button" id="play-button"><span></span></li>
+          </ul>
+        </div>
+    </div>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>

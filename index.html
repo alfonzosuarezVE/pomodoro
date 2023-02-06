@@ -21,21 +21,21 @@
       <div class="container">
         <div class="time-container">
           <form action="">
-            <label for="hours-input">
-              <input type="number" id="hours-input" min="0" max="60" placeholder="00"/>
+            <label for="learningMinutes">
+              <input type="number" id="learningMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
             </label>
-            <label for="minutes-input">
-              <input type="number" id="minutes-input" min="0" max="60" placeholder="00"/>
+            <label for="restingMinutes">
+              <input type="number" id="restingMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
             </label>
-            <label for="seconds-input">
-              <input type="number" id="seconds-input" min="0" max="60" placeholder="00"/>
+            <label for="reflexionMinutes">
+              <input type="number" id="reflexionMinutes" min="0" max="60" placeholder="00" value="0" step="5" required/>
             </label>
           </form>
         </div>
 
         <div class="controls-container">
           <ul>
-            <li class="play-button"><span></span></li>
+            <li class="play-button" id="play-button"><span></span></li>
           </ul>
         </div>
     </div>

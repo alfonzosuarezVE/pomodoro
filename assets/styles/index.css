@@ -1,15 +1,148 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: var(--main-text);
+  text-decoration: none;
+  list-style: none;
+  
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-:root{
-    --background: #03001C;
-    --main-text: #FFFFFF;
+:root {
+  --background: #03001c;
+  --main-text: #ffffff;
+  --accent: #85bfd1;
+  --gray: #a0a0a1;
+  --filling: #1c1e22;
+  --borders: #26292d;
+}
+
+body {
+  background-color: var(--background);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: grid;
+  place-content: center;
+  letter-spacing: 5px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--gray);
+  border-radius: 0 0 10px 10px;
+}
+.container {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.time-container {
+  width: 80%;
+  min-width: 340px;
+  max-width: 400px;
+  height: 300px;
+  display: grid;
+  place-content: center;
+  margin-bottom: 200px;
+}
+form{
+    height: 300px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+form input
+{
+    width: 100px;
+    height: 300px;
+    font-size: 6rem;
+    letter-spacing: 0px;
+    background: transparent;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+#minutes-input
+{
+    border-left: 1px solid rgba(160, 160, 161, 0.1);
+    border-right: 1px solid rgba(160, 160, 161, 0.1);
+   
+
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+/** We start with button styles **/ 
+
+.controls-container
+{
+    width: 100%;
+    height: 80px;
+}
+.controls-container ul 
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.controls-container ul .play-button{
+   
+height: 80px;
+background-color: white;
+width: 80px;
+border-radius: 50%;
+display: grid;
+place-content: center;
+background: rgba(160, 160, 161, 0.1);
+cursor: pointer;
+transition: 0.2s all;
+}
+
+.play-button:hover{
+  transform: scale(1.05,1.05);
+  -webkit-transform:scale(1.05,1.05);
+    -moz-transform:scale(1.05,1.05);
+}
+
+.controls-container ul .play-button span {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    clip-path: polygon(50% 10%, 0% 100%, 100% 100%);
+    background-color: black;
+    transform: rotate(90deg);
+    background: var(--accent);
+
 }

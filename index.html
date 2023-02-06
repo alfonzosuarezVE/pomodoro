@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/styles/index.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h2>POMODORO</h2>
-        </header>
-        <section class="container">
+      <header>
+        <h2>POMODORO</h2>
+      </header>
+      <div class="container">
+        <div class="time-container">
+          <form action="">
+            <label for="hours-input">
+              <input type="number" id="hours-input" min="0" max="60" placeholder="00"/>
+            </label>
+            <label for="minutes-input">
+              <input type="number" id="minutes-input" min="0" max="60" placeholder="00"/>
+            </label>
+            <label for="seconds-input">
+              <input type="number" id="seconds-input" min="0" max="60" placeholder="00"/>
+            </label>
+          </form>
+        </div>
 
-            <div class="time-container">
-                <form action="">
-                    <label for="hours-input">
-                        <input type="number" id="hours-input">
-                    </label>
-                    <label for="minutes-input">
-                        <input type="number" id="hours-input">
-                    </label>
-                    <label for="seconds-input">
-                        <input type="number" id="seconds-input">
-                    </label>
-                </form>
-            </div>
-
-            <div class="controls-container">
-                <ul>
-
-                    <li><span>O</span></li>
-                </ul>
-            </div>
-        </section>
+        <div class="controls-container">
+          <ul>
+            <li class="play-button"><span></span></li>
+          </ul>
+        </div>
+    </div>
     </main>
     <script src="/index.js"></script>
-</body>
+  </body>
 </html>
